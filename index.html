@@ -5,13 +5,19 @@
 <script src="jquery-1.12.3.js"></script>
 <style>
   .wall1
-  {
+  { z-index:1;
         height: 100%;
     width: 100%;
     background-image: url("http://i661.photobucket.com/albums/uu332/ilovemooks/nature-1.jpg");
     position: absolute;
     background-repeat: no-repeat;
     background-size: cover;
+  }
+  .wall1>div
+  {
+   z-index:2;
+   color:red;
+   
   }
 </style>
 </head>
@@ -72,7 +78,7 @@
 </nav>
 </div>
 <div class="wall1">
- 
+  <div class="text1"> YOUR FAVORITE SOURCE OF FREE BOOTSTRAP THEMES </div>
 </div>
 </body>
 </html>
